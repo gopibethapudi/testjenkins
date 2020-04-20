@@ -1,5 +1,5 @@
 node
 {
-      datas = readFile file: 'a.yml'
+      datas = readFile file: ${WORKSPACE}/'a.yml'
     println datas;
 }
