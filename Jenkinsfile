@@ -1,5 +1,5 @@
 
-import groovy.yaml.YamlSlurper
+import groovy.json.JsonSlurper
 node
 {
       checkout scm;
