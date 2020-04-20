@@ -5,6 +5,8 @@ node
       checkout scm;
      
       
-      //datas = readYaml file: "${env.WORKSPACE}/a.yaml"
-    //println datas.ami.nonprod;
+      datas = readFile file: "${env.WORKSPACE}/a.yaml"
+          def parser = new JsonSlurper()
+def json = parser.parseText(datas)
+      println json
 }
