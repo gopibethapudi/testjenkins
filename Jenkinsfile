@@ -4,5 +4,5 @@ node
      
       
       datas = readFile file: "${env.WORKSPACE}/a.yaml"
-    println datas;
+    println datas.ami.nonprod;
 }
