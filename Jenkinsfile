@@ -1,5 +1,5 @@
 node
 {
-      datas = readYaml file: 'a.yml'
+      datas = readFile file: 'a.yml'
     println datas;
 }
