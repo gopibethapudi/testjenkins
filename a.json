@@ -1,7 +1,20 @@
 [
-    {
-        "ParameterKey": "ecsAmi",
-        "ParameterValue": "ami-03d98dcba5e4f3be1"
-    }
-    
+  {
+    "ParameterKey":"environment",
+    "ParameterValue":[
+      "nonprod","prod","qa"
+    ]
+  },
+  {
+    "ParameterKey":"ec2_flavour",
+    "ParameterValue":["t2.large","t2.micro"]
+  },
+  {
+    "ParameterKey":"region",
+    "ParameterValue":["us-east-1","eu-west-1","ap-southeast-1"]
+  },
+  {
+    "ParameterKey":"infra_prov",
+    "ParameterValue":["CREATE/UPDATE","DESTROY"]
+  }
 ]
