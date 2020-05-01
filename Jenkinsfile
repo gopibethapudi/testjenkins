@@ -18,5 +18,5 @@ node
       checkout scm;
      
       
-     println jenkinsParamValue("${env.WORKSPACE}/a.json","environment")
+     println jenkinsParamValue("${env.WORKSPACE}/a.json","environmenyt")
 }
