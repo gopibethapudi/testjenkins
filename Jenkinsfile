@@ -2,9 +2,7 @@
 import groovy.json.JsonSlurper
 def jenkinsParamValue(file,key)
 {
-      def data =  datas = readFile file: file
-      def parser = new JsonSlurper()
-      def json = parser.parseText(datas)
+      def json = readJSON file: file
       def val = ''
       json.each {
             s -> if(s.ParameterKey == key)
