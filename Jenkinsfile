@@ -1,6 +1,6 @@
 
 import groovy.json.JsonSlurper
-def jekinsParamValue(file,key)
+def jenkinsParamValue(file,key)
 {
       def data =  datas = readFile file: file
       def parser = new JsonSlurper()
