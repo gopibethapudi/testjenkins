@@ -1,8 +1,7 @@
-{
-    "environment":[
-        "nonprod","prod","qa"
-      ],
-      "ec2_flavour":["t2.large","t2.micro"],
-      "region":["us-east-1","eu-west-1","ap-southeast-1"],
-      "infra_prov":["CREATE/UPDATE","DESTROY"]
-}
+[
+    {
+        "ParameterKey": "ecsAmi",
+        "ParameterValue": "ami-03d98dcba5e4f3be1"
+    }
+    
+]
